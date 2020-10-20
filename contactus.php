@@ -79,7 +79,7 @@ border-radius: 10%;
 <body class="a">
    <div class="topnav">
   <a href="fristpage.php"><img src="freelancer-bird.png" style="width: 40px;height: 18px;"></a>
-  <a  href="#home">Home</a>
+  <a  href="homepage.php">Home</a>
   <div class="topnav-right">
     <a href="about.php">About</a>
     <a class="active" href="">Contact</a>
@@ -94,7 +94,7 @@ border-radius: 10%;
 <div class="row">
   <div class="column" >
       <center><img class="about" src="img1.jpg" alt="Girl in a jacket"></center>
-    <center><h2>Adress</h2>
+    <center><h2>Address</h2>
     <p><b>GetJob group</b></p>
       <p>HighLevel Junction</p>
       <p>colombo 07</p>
