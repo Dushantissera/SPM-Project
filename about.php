@@ -99,7 +99,7 @@ ul li:before {
   <a href="fristpage.php"><img src="freelancer-bird.png" style="width: 40px;height: 18px;"></a>
   <a href="homepage.php">Home</a>
   <div class="topnav-right">
-    <a class="active" href="">About</a>
+    <a class="active" href="about.php">About</a>
     <a href="contactus.php">Contact</a>
     <a href="homejoin.php">Join</a>
   </div>
