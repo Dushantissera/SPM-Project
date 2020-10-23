@@ -1,3 +1,193 @@
+<?php
+$server="localhost";
+$usename1="root";
+$password12="";
+$dbname="GetJob";
+
+
+
+function display1(){
+      $con = mysqli_connect("localhost","root","","GetJob");
+      $sql="SELECT * FROM `project` WHERE id='1'";
+      $response= @mysqli_query($con,$sql);
+
+      if ($response) {
+  echo '<table align="left" cellspacing="5" cellpadding="8">';
+
+  while ($row = mysqli_fetch_array($response)) {
+
+    echo '<tr><td align="left">'.
+    $row['project_name'] . '</td></tr><tr><td align="left">' .
+    $row['client_name'] . '</td></tr><tr><td align="left">'.
+    $row['client_mail'] . '</td></tr><tr><td align="left">'.
+    $row['description'] . '</td></tr><tr><td align="left">'.
+    $row['deadline'] . '</td></tr>'
+     ;
+    
+    echo '</tr>';
+  }
+
+  echo '</table>';
+
+}else{
+  echo "Coudn't issue database query ";
+  @mysqli_error($con);
+}
+
+}
+
+function display2(){
+      $con = mysqli_connect("localhost","root","","GetJob");
+      $sql="SELECT * FROM `project` WHERE id='2'";
+      $response= @mysqli_query($con,$sql);
+
+      if ($response) {
+  echo '<table align="left" cellspacing="5" cellpadding="8">';
+
+  while ($row = mysqli_fetch_array($response)) {
+
+    echo '<tr><td align="left">'.
+    $row['project_name'] . '</td></tr><tr><td align="left">' .
+    $row['client_name'] . '</td></tr><tr><td align="left">'.
+    $row['client_mail'] . '</td></tr><tr><td align="left">'.
+    $row['description'] . '</td></tr><tr><td align="left">'.
+    $row['deadline'] . '</td></tr>'
+     ;
+    
+    echo '</tr>';
+  }
+
+  echo '</table>';
+
+}else{
+  echo "Coudn't issue database query ";
+  @mysqli_error($con);
+}
+
+}
+
+function display3(){
+      $con = mysqli_connect("localhost","root","","GetJob");
+      $sql="SELECT * FROM `project` WHERE id='3'";
+      $response= @mysqli_query($con,$sql);
+
+      if ($response) {
+  echo '<table align="left" cellspacing="5" cellpadding="8">';
+
+  while ($row = mysqli_fetch_array($response)) {
+
+    echo '<tr><td align="left">'.
+    $row['project_name'] . '</td></tr><tr><td align="left">' .
+    $row['client_name'] . '</td></tr><tr><td align="left">'.
+    $row['client_mail'] . '</td></tr><tr><td align="left">'.
+    $row['description'] . '</td></tr><tr><td align="left">'.
+    $row['deadline'] . '</td></tr>'
+     ;
+    
+    echo '</tr>';
+  }
+
+  echo '</table>';
+
+}else{
+  echo "Coudn't issue database query ";
+  @mysqli_error($con);
+}
+
+}
+
+function display4(){
+      $con = mysqli_connect("localhost","root","","GetJob");
+      $sql="SELECT * FROM `project` WHERE id='4'";
+      $response= @mysqli_query($con,$sql);
+
+      if ($response) {
+  echo '<table align="left" cellspacing="5" cellpadding="8">';
+
+  while ($row = mysqli_fetch_array($response)) {
+
+    echo '<tr><td align="left">'.
+    $row['project_name'] . '</td></tr><tr><td align="left">' .
+    $row['client_name'] . '</td></tr><tr><td align="left">'.
+    $row['client_mail'] . '</td></tr><tr><td align="left">'.
+    $row['description'] . '</td></tr><tr><td align="left">'.
+    $row['deadline'] . '</td></tr>'
+     ;
+    
+    echo '</tr>';
+  }
+
+  echo '</table>';
+
+}else{
+  echo "Coudn't issue database query ";
+  @mysqli_error($con);
+}
+
+}
+
+function display5(){
+      $con = mysqli_connect("localhost","root","","GetJob");
+      $sql="SELECT * FROM `project` WHERE id='5'";
+      $response= @mysqli_query($con,$sql);
+
+      if ($response) {
+  echo '<table align="left" cellspacing="5" cellpadding="8">';
+
+  while ($row = mysqli_fetch_array($response)) {
+
+    echo '<tr><td align="left">'.
+    $row['project_name'] . '</td></tr><tr><td align="left">' .
+    $row['client_name'] . '</td></tr><tr><td align="left">'.
+    $row['client_mail'] . '</td></tr><tr><td align="left">'.
+    $row['description'] . '</td></tr><tr><td align="left">'.
+    $row['deadline'] . '</td></tr>'
+     ;
+    
+    echo '</tr>';
+  }
+
+  echo '</table>';
+
+}else{
+  echo "Coudn't issue database query ";
+  @mysqli_error($con);
+}
+
+}
+
+function display6(){
+      $con = mysqli_connect("localhost","root","","GetJob");
+      $sql="SELECT * FROM `project` WHERE id='6'";
+      $response= @mysqli_query($con,$sql);
+
+      if ($response) {
+  echo '<table align="left" cellspacing="5" cellpadding="8">';
+
+  while ($row = mysqli_fetch_array($response)) {
+
+    echo '<tr><td align="left">'.
+    $row['project_name'] . '</td></tr><tr><td align="left">' .
+    $row['client_name'] . '</td></tr><tr><td align="left">'.
+    $row['client_mail'] . '</td></tr><tr><td align="left">'.
+    $row['description'] . '</td></tr><tr><td align="left">'.
+    $row['deadline'] . '</td></tr>'
+     ;
+    
+    echo '</tr>';
+  }
+
+  echo '</table>';
+
+}else{
+  echo "Coudn't issue database query ";
+  @mysqli_error($con);
+}
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,7 +303,59 @@ body {
 
 <center><h1>Projects For You..</h1></center><br>
 
+<div class="pro1">
+<div class="card">
+  <div class="container">
+    <h4><b><?php display1(); ?></b></h4> 
+    <p></p> 
+  </div>
+</div>
+</div>
 
+<div class="pro2">
+<div class="card">
+  <div class="container">
+    <h4><b><?php display2(); ?></b></h4> 
+    <p></p> 
+  </div>
+</div>
+</div>
+
+<div class="pro3">
+<div class="card">
+  <div class="container">
+    <h4><b><?php display3(); ?></b></h4> 
+    <p></p> 
+  </div>
+</div>
+</div>
+
+<div class="pro4">
+<div class="card">
+  <div class="container">
+    <h4><b><?php display4(); ?></b></h4> 
+    <p></p> 
+  </div>
+</div>
+</div>
+
+<div class="pro5">
+<div class="card">
+  <div class="container">
+    <h4><b><?php display5(); ?></b></h4> 
+    <p></p> 
+  </div>
+</div>
+</div>
+
+<div class="pro6">
+<div class="card">
+  <div class="container">
+    <h4><b><?php display6(); ?></b></h4> 
+    <p></p> 
+  </div>
+</div>
+</div>
 
 <div class="footer">
   <h5>GetJob.LK ® is a registered Trademark of GetJob Technology Pty Limited
