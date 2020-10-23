@@ -246,7 +246,43 @@ p{
   <p>Hire experts for any job in <br> Sri Lanka</p>
   <button class="btn1" onclick="location.href='http://localhost/Assignment/postproject.php';"">Want to Hire</button><button class="btn2" onclick="document.getElementById('id01').style.display='block'">Want to Work</button>
 
- 
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="loginserver.php" method="POST" >
+    <div class="imgcontainer">
+      <img src="freelancer-bird.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="name" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pw" required>
+        
+      <button class="btn3" name="login" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <center>Don't have an account? <a href="http://localhost/Assignment/joinpage.php"> Sign Up</a></center>
+    <div class="container" style="background-color:#f1f1f1">
+    <center><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">X</button></center>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
 
